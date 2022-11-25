@@ -1,0 +1,37 @@
+@use './variables';
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.imagen{
+    @include sizes(290px, auto);
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.maps{
+    @include sizes(290px, 290px);
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 992px) {
+    .imagen{
+        @include sizes(340px, auto);
+    }
+    .maps{
+        @include sizes(340px, 340px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .imagen{
+        @include sizes(500px, auto);
+    }
+    .maps{
+        @include sizes(500px, 500px);
+    }
+}

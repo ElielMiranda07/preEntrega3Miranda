@@ -1,0 +1,10 @@
+@use './variables';
+
+.h2__a{
+    text-decoration: none;
+    color: #cafe48;
+}
+
+.h2__a:hover{
+    color: variables.$color-naranja;
+}

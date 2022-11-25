@@ -1,0 +1,134 @@
+@use './variables';
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav{
+    z-index: 2;
+    border-bottom: variables.$borde-layout;
+    border-radius: variables.$border-radius;
+}
+
+.navbar-brand{
+    color: variables.$color_verde;
+    font-weight: variables.$font-600;
+    font-size: xx-large;
+}
+
+.navbar-brand:hover{
+    color: variables.$color-naranja;
+}
+
+#navbarNavAltMarkup{
+    justify-content: right;
+}
+
+.nav-link{
+    color: variables.$color_verde;
+    font-weight: variables.$font-600;
+    margin-right: 10px;
+}
+
+.nav-link:hover{
+    color: variables.$color-naranja;
+}
+
+main{
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: variables.$borde-layout;
+    border-top: variables.$borde-layout;
+    border-radius: variables.$border-radius;
+    min-height: calc(100vh - 60px - 77px);
+}
+
+h1{
+    color: variables.$color-verde;
+    font-weight: variables.$font-600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+p{
+    color: variables.$color-amarillo;
+    font-weight: variables.$font-600;
+}
+
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100;
+}
+
+section article{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logos{
+    @include sizes(25px, auto)
+}
+
+footer{
+    height: 60px;
+    background-color: #f8f9fa;
+    border-top: variables.$borde-layout;
+    border-radius: variables.$border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer__p{
+    color: variables.$color-verde;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media screen and (min-width: 576px) {
+    .navbar-brand{
+        font-size: 40px;
+    }
+    main{
+        min-height: calc(100vh - 80px - 89px);
+    }
+    footer{
+        height: 80px;
+    }
+    .logos{
+        @include sizes(40px, auto)
+    }
+    #footer__p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header{
+        position: sticky;
+        top: 0px;
+        z-index: 2;
+    }
+    #footer__p{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-link{
+        font-size: 20px;
+    }
+}

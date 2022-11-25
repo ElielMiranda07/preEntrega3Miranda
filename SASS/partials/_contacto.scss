@@ -1,0 +1,64 @@
+@use './variables';
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.section__form{
+    @include sizes(280px, 390px);
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px #000000;
+    border-radius: variables.$border-radius;
+    background-color: #f1f1f1;
+}
+
+.article__form{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 240px;
+}
+
+article label, article input, article textarea{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: variables.$color-verde;
+    font-weight: variables.$font-600;
+    text-shadow: 1px 3px 3px #777777;
+}
+
+article input:not([type="submit"]), article textarea{
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: variables.$border-radius;
+    border-bottom: 3px solid variables.$color-verde;
+    border-right: 3px solid variables.$color-verde;
+    outline: none;
+}
+
+article textarea{
+    min-height: 100px;
+}
+
+article input[type="submit"]{
+    border: none;
+    color: variables.$color-verde;
+    font-size: 18px;
+    background-color: #f8f9fa;
+    border-bottom: 3px solid variables.$color-verde;
+    border-right: 3px solid variables.$color-verde;
+    border-radius: variables.$border-radius;
+    cursor: pointer;
+}
+
+article input[type="submit"]:hover{
+    color: variables.$color-naranja;
+    border-bottom: 3px solid variables.$color-naranja;
+    border-right: 3px solid variables.$color-naranja;
+}
