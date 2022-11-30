@@ -72,9 +72,24 @@ section article {
   margin-bottom: 10px;
 }
 
-.logos {
+.logof {
   height: auto;
   width: 25px;
+  color: rgb(83, 83, 83);
+}
+
+.logof:hover {
+  color: #0080ff;
+}
+
+.logoi {
+  height: auto;
+  width: 25px;
+  color: rgb(83, 83, 83);
+}
+
+.logoi:hover {
+  color: #ff1bec;
 }
 
 footer {
@@ -103,7 +118,11 @@ footer {
   footer {
     height: 80px;
   }
-  .logos {
+  .logof {
+    height: auto;
+    width: 40px;
+  }
+  .logoi {
     height: auto;
     width: 40px;
   }

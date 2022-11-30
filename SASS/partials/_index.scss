@@ -78,8 +78,22 @@ section article{
     margin-bottom: 10px;
 }
 
-.logos{
-    @include sizes(25px, auto)
+.logof{
+    @include sizes(25px, auto);
+    color: rgb(83, 83, 83);
+}
+
+.logof:hover{
+    color: #0080ff
+}
+
+.logoi{
+    @include sizes(25px, auto);
+    color: rgb(83, 83, 83);
+}
+
+.logoi:hover{
+    color: #ff1bec;
 }
 
 footer{
@@ -108,7 +122,10 @@ footer{
     footer{
         height: 80px;
     }
-    .logos{
+    .logof{
+        @include sizes(40px, auto)
+    }
+    .logoi{
         @include sizes(40px, auto)
     }
     #footer__p{
