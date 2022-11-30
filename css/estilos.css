@@ -75,7 +75,7 @@ section article {
 .logof {
   height: auto;
   width: 25px;
-  color: rgb(83, 83, 83);
+  color: #3c5a14;
 }
 
 .logof:hover {
@@ -85,7 +85,7 @@ section article {
 .logoi {
   height: auto;
   width: 25px;
-  color: rgb(83, 83, 83);
+  color: #3c5a14;
 }
 
 .logoi:hover {

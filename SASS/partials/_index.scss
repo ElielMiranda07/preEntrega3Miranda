@@ -80,7 +80,7 @@ section article{
 
 .logof{
     @include sizes(25px, auto);
-    color: rgb(83, 83, 83);
+    color: variables.$color-verde;
 }
 
 .logof:hover{
@@ -89,7 +89,7 @@ section article{
 
 .logoi{
     @include sizes(25px, auto);
-    color: rgb(83, 83, 83);
+    color: variables.$color-verde;
 }
 
 .logoi:hover{
